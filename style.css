@@ -1,0 +1,47 @@
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #080809;
+}
+::-webkit-scrollbar-thumb {
+  background: #33261a;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #e0a96d;
+}
+
+/* Premium Golden Metallic Text Effect */
+.gold-text {
+  background: linear-gradient(135deg, #f3d0a9 0%, #e0a96d 40%, #c5a059 70%, #b87d4b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Arabic Pattern Watermark Overlay */
+.arabic-pattern-bg {
+  background-image: radial-gradient(#e0a96d 0.75px, transparent 0.75px), radial-gradient(#e0a96d 0.75px, #080809 0.75px);
+  background-size: 36px 36px;
+  background-position: 0 0, 18px 18px;
+  opacity: 0.03;
+}
+
+.lawyer-card-glow {
+  box-shadow: 0 10px 40px -10px rgba(224, 169, 109, 0.12);
+}
+
+/* Marquee Animation for Team Members */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(50%); }
+}
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
